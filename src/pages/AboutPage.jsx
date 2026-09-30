@@ -60,7 +60,7 @@ export default function AboutPage() {
             <div className="lg:col-span-6 relative">
               <div className="rounded-3xl bg-white dark:bg-slate-900 border-2 border-brand-orange/70 dark:border-slate-800 shadow-[0_4px_20px_rgba(255,87,34,0.15)] p-3 space-y-4">
                 <div className="rounded-2xl overflow-hidden aspect-[4/3] bg-slate-900 relative">
-                  <img src="ache_workshop.jpg" alt="AFTS Chennai Workshop Operations" className="w-full h-full object-cover" onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1000&q=80'; }} />
+                  <img src="/ache_workshop.jpg" alt="AFTS Chennai Workshop Operations" className="w-full h-full object-cover" onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1000&q=80'; }} />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
                   
                   <div className="absolute bottom-4 left-4 right-4 bg-slate-950/90 backdrop-blur-md p-3.5 rounded-xl border border-slate-700">

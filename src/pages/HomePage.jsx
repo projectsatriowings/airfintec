@@ -152,7 +152,7 @@ export default function HomePage({ setActivePage, onOpenSpec }) {
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-3xl overflow-hidden bg-white dark:bg-slate-900 border-2 border-brand-orange/70 dark:border-slate-700/80 p-3 shadow-[0_4px_20px_rgba(255,87,34,0.15)]">
               <div className="relative rounded-2xl overflow-hidden aspect-[4/3] bg-slate-900">
-                <img src="ache_render.jpg" alt="Air-Cooled Heat Exchanger Render" className="w-full h-full object-cover object-center opacity-90 hover:scale-105 transition-transform duration-700" onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1000&q=80'; }} />
+                <img src="/ache_render.jpg" alt="Air-Cooled Heat Exchanger Render" className="w-full h-full object-cover object-center opacity-90 hover:scale-105 transition-transform duration-700" onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1000&q=80'; }} />
                 
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
                 

@@ -29,9 +29,9 @@ export default function Navbar({ activePage, setActivePage, theme, toggleTheme }
           className="flex items-center gap-3 group text-left cursor-pointer focus:outline-none"
         >
           <div className="relative h-10 w-10 rounded-xl bg-gradient-to-br from-brand-orange via-amber-400 to-brand-blue p-0.5 shadow-sm group-hover:scale-105 transition-all duration-300 flex-shrink-0">
-            <div className="w-full h-full bg-white rounded-[10px] flex items-center justify-center p-0.5 shadow-inner">
+            <div className="w-full h-full bg-white rounded-[10px] flex items-center justify-center p-0.5 shadow-inner overflow-hidden">
               <img 
-                src="Air-Fin Tech logo.png" 
+                src="/logo.png" 
                 alt="Air-Fin Technical Services" 
                 className="h-8 w-auto object-contain transition-transform duration-300 group-hover:scale-110" 
                 onError={(e) => { e.target.style.display = 'none'; e.target.nextElementSibling.style.display = 'flex'; }}
