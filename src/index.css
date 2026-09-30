@@ -1,3 +1,8 @@
+/* Global Typography Uniformity */
+body, button, input, select, textarea, span, p, h1, h2, h3, h4, h5, h6, li, td, th, div {
+  font-family: 'Outfit', sans-serif !important;
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
