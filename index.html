@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Air-Fin Technical Services Pvt Ltd | Precision ACHE Spares & Rapid Field Engineering</title>
+  <meta name="description" content="Air-Fin Technical Services Pvt Ltd (AFTS) - Premier engineering specialists in Air-Cooled Heat Exchanger (ACHE) spares, emergency tube plugging, field retubing, ASME header boxes, and AVL-approved plant turnaround solutions." />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="Air-Fin Tech logo.png"/>
+  <link rel="apple-touch-icon" href="Air-Fin Tech logo.png"/>
+
+  <!-- Preconnect & Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              orange: "#FF5722",
+              "orange-hover": "#E64A19",
+              "orange-light": "#FFF3E0",
+              blue: "#0284C7",
+              "blue-dark": "#0369A1",
+              "blue-light": "#E0F2FE",
+              dark: "#0F172A",
+              "dark-deep": "#070C16",
+              card: "#1E293B",
+              "card-border": "#334155",
+              slate: "#475569",
+              light: "#F8FAFC",
+              emerald: "#10B981",
+              "emerald-light": "#D1FAE5"
+            }
+          },
+          fontFamily: {
+            sans: ["Plus Jakarta Sans", "sans-serif"],
+            display: ["Space Grotesk", "sans-serif"],
+            mono: ["JetBrains Mono", "monospace"]
+          },
+          boxShadow: {
+            'glow-orange': '0 0 25px rgba(255, 87, 34, 0.35)',
+            'glow-blue': '0 0 25px rgba(2, 132, 199, 0.35)',
+            'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.37)'
+          },
+          backgroundImage: {
+            'grid-pattern': "linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px)"
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-brand-dark-deep text-slate-100 font-sans antialiased selection:bg-brand-orange selection:text-white overflow-x-hidden">
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>

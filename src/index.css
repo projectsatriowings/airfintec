@@ -1,0 +1,98 @@
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+html:not(.dark) ::-webkit-scrollbar-track {
+  background: #e2e8f0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+html:not(.dark) ::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff5722;
+}
+
+/* Reusable Orange Border Card Frame Utility */
+.card-orange-frame {
+  border: 2px solid rgba(255, 87, 34, 0.7) !important;
+  box-shadow: 0 4px 20px rgba(255, 87, 34, 0.15) !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card-orange-frame:hover {
+  border-color: #ff5722 !important;
+  box-shadow: 0 8px 30px rgba(255, 87, 34, 0.28) !important;
+  transform: translateY(-3px);
+}
+
+/* Glassmorphism utilities */
+.glass-dark {
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+html:not(.dark) .glass-dark {
+  background: #ffffff;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 2px solid rgba(255, 87, 34, 0.7);
+  box-shadow: 0 4px 20px rgba(255, 87, 34, 0.15);
+}
+
+.glass-card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.glass-card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px -10px rgba(0, 0, 0, 0.12), 0 0 20px rgba(234, 88, 12, 0.3);
+  border-color: #ff5722 !important;
+}
+
+/* Tech Animated Pulse */
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.05); }
+}
+.animate-pulse-slow {
+  animation: pulse-slow 8s infinite ease-in-out;
+}
+
+/* Range slider custom styling */
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #FF5722;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(255,87,34,0.5);
+}
+
+/* Print styling for Spec sheets */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #spec-modal-content, #spec-modal-content * {
+    visibility: visible;
+  }
+  #spec-modal-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    color: #000;
+    background: #fff;
+  }
+}
