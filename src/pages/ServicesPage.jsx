@@ -116,9 +116,12 @@ export default function ServicesPage({ setActivePage }) {
                   <span className={`font-mono text-[10px] uppercase font-extrabold px-3 py-1 rounded shadow-xs inline-block ${s.badgeClass}`}>{s.badge}</span>
                   <h2 className="font-display font-bold text-xl text-slate-900 dark:text-white">{s.title}</h2>
                   <p className="text-slate-800 dark:text-slate-300 text-xs leading-relaxed font-semibold">{s.desc}</p>
-                  <ul className="text-xs font-mono text-slate-700 dark:text-slate-400 space-y-1.5 list-disc list-inside">
+                  <ul className="text-xs font-sans text-slate-700 dark:text-slate-400 space-y-2">
                     {s.bullets.map((b, bIdx) => (
-                      <li key={bIdx}>{b}</li>
+                      <li key={bIdx} className="flex items-start gap-2">
+                        <span className="material-symbols-outlined text-brand-orange text-sm mt-0.5 font-bold flex-shrink-0">check_circle</span>
+                        <span className="font-semibold text-slate-800 dark:text-slate-300">{b}</span>
+                      </li>
                     ))}
                   </ul>
                 </div>

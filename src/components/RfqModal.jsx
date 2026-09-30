@@ -53,7 +53,7 @@ export default function RfqModal({ isOpen, onClose, defaultProduct, onNavigateTo
           {/* Logo Badge */}
           <div className="h-16 w-16 rounded-2xl bg-gradient-to-br from-brand-orange via-amber-400 to-brand-blue p-0.5 shadow-glow-orange flex-shrink-0 animate-pulse">
             <div className="w-full h-full bg-white rounded-[14px] flex items-center justify-center p-1.5 shadow-inner">
-              <img src="Air-Fin Tech logo.png" alt="Air-Fin Tech" className="h-11 w-auto object-contain" />
+              <img src="/logo.png" alt="Air-Fin Tech" className="h-11 w-auto object-contain" />
             </div>
           </div>
 
