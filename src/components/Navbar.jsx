@@ -26,18 +26,14 @@ export default function Navbar({ activePage, setActivePage, theme, toggleTheme }
         {/* BRAND LOGO */}
         <button 
           onClick={() => handleNavClick('home')} 
-          className="flex items-center gap-3 group text-left cursor-pointer focus:outline-none"
+          className="flex items-center gap-3 group text-left cursor-pointer focus:outline-none py-1"
         >
-          <div className="relative h-10 w-10 rounded-xl bg-gradient-to-br from-brand-orange via-amber-400 to-brand-blue p-0.5 shadow-sm group-hover:scale-105 transition-all duration-300 flex-shrink-0">
-            <div className="w-full h-full bg-white rounded-[10px] flex items-center justify-center p-0.5 shadow-inner overflow-hidden">
-              <img 
-                src="/logo.png" 
-                alt="Air-Fin Technical Services" 
-                className="h-8 w-auto object-contain transition-transform duration-300 group-hover:scale-110" 
-                onError={(e) => { e.target.style.display = 'none'; e.target.nextElementSibling.style.display = 'flex'; }}
-              />
-              <span className="material-symbols-outlined text-brand-orange text-xl hidden">mode_fan</span>
-            </div>
+          <div className="relative flex items-center justify-center bg-white p-1 rounded-xl border border-slate-200/80 dark:border-slate-700/80 shadow-xs group-hover:shadow-md transition-all duration-300 flex-shrink-0">
+            <img 
+              src="/logo.png" 
+              alt="Air-Fin Technical Services" 
+              className="h-10 sm:h-11 w-auto object-contain transition-transform duration-300 group-hover:scale-105" 
+            />
           </div>
 
           <div className="flex flex-col">
@@ -45,7 +41,7 @@ export default function Navbar({ activePage, setActivePage, theme, toggleTheme }
               <span className="font-display font-extrabold text-lg lg:text-xl tracking-tight text-slate-900 dark:text-white group-hover:text-brand-orange transition-colors leading-none">
                 Air-Fin Tech
               </span>
-              <span className="bg-gradient-to-r from-brand-orange to-amber-500 text-white text-[10px] font-mono font-extrabold px-1.5 py-0.2 rounded shadow-xs uppercase tracking-wider">
+              <span className="bg-gradient-to-r from-brand-orange to-amber-500 text-white text-[10px] font-mono font-extrabold px-1.5 py-0.5 rounded shadow-xs uppercase tracking-wider">
                 PVT LTD
               </span>
             </div>

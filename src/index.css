@@ -14,7 +14,7 @@ span:not(.material-symbols-outlined) {
   line-height: 1 !important;
   letter-spacing: normal !important;
   text-transform: none !important;
-  display: inline-block !important;
+  display: inline-block;
   white-space: nowrap !important;
   word-wrap: normal !important;
   direction: ltr !important;
