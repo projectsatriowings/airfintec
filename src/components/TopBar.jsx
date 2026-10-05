@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
 
 export default function TopBar({ onOpenSearch }) {
-  const [utcTime, setUtcTime] = useState('');
+  const [istTime, setIstTime] = useState('');
 
   useEffect(() => {
     const updateTime = () => {
       const now = new Date();
-      const timeStr = now.toUTCString().split(' ')[4] + ' UTC';
-      setUtcTime(timeStr);
+      const timeOptions = { timeZone: 'Asia/Kolkata', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false };
+      const timeStr = now.toLocaleTimeString('en-IN', timeOptions) + ' IST';
+      setIstTime(timeStr);
     };
     updateTime();
     const interval = setInterval(updateTime, 1000);
@@ -29,25 +30,25 @@ export default function TopBar({ onOpenSearch }) {
 
         <div className="flex items-center gap-5">
           <div className="hidden lg:flex items-center gap-1.5 text-slate-300 text-xs">
-            <span className="material-symbols-outlined text-sm text-brand-orange">schedule</span>
-            <span className="font-bold text-amber-400">{utcTime || 'UTC Live'}</span>
+            <span className="material-symbols-outlined text-sm text-sky-400">schedule</span>
+            <span className="font-bold text-sky-300">{istTime || 'IST Live'}</span>
           </div>
 
           <button 
             onClick={onOpenSearch}
             className="hidden sm:flex items-center gap-2 bg-slate-800/90 hover:bg-slate-700 px-2.5 py-0.5 rounded text-slate-200 border border-slate-700 transition-colors cursor-pointer text-xs font-semibold"
           >
-            <span className="material-symbols-outlined text-xs text-amber-400">search</span>
+            <span className="material-symbols-outlined text-xs text-sky-400">search</span>
             <span>Search Specs</span>
-            <kbd className="bg-slate-900 px-1 py-0.2 rounded text-[10px] text-amber-300 border border-slate-700 font-mono font-bold">Ctrl+K</kbd>
+            <kbd className="bg-slate-900 px-1 py-0.2 rounded text-[10px] text-sky-300 border border-slate-700 font-mono font-bold">Ctrl+K</kbd>
           </button>
 
           <div className="flex items-center gap-4 text-xs font-sans">
-            <a href="tel:+917695828840" className="flex items-center gap-1 text-slate-100 hover:text-brand-orange transition-colors">
-              <span className="material-symbols-outlined text-brand-orange text-sm">call</span>
+            <a href="tel:+917695828840" className="flex items-center gap-1 text-slate-100 hover:text-sky-400 transition-colors">
+              <span className="material-symbols-outlined text-sky-400 text-sm">call</span>
               <span className="font-extrabold text-white text-xs">+91 7695828840</span>
             </a>
-            <a href="mailto:afts@airfintec.com" className="hidden sm:flex items-center gap-1 text-slate-200 hover:text-brand-orange transition-colors">
+            <a href="mailto:afts@airfintec.com" className="hidden sm:flex items-center gap-1 text-slate-200 hover:text-sky-400 transition-colors">
               <span className="material-symbols-outlined text-brand-blue text-sm">mail</span>
               <span className="font-semibold text-slate-200 text-xs">afts@airfintec.com</span>
             </a>

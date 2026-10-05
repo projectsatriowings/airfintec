@@ -124,7 +124,7 @@ export default function RfqModal({ isOpen, onClose, defaultProduct, onNavigateTo
         <div className="space-y-3 pt-1">
           <button
             onClick={handleProceed}
-            className="w-full bg-gradient-to-r from-brand-orange via-amber-500 to-brand-orange hover:from-amber-400 hover:to-brand-orange text-slate-950 font-display text-sm uppercase font-extrabold tracking-wider py-4 px-6 rounded-2xl shadow-[0_0_25px_rgba(255,107,0,0.5)] hover:scale-[1.02] transition-all cursor-pointer flex items-center justify-center gap-3 group"
+            className="w-full bg-gradient-to-r from-sky-400 via-sky-500 to-blue-600 hover:from-sky-300 hover:to-blue-500 text-slate-950 font-display text-sm uppercase font-extrabold tracking-wider py-4 px-6 rounded-2xl shadow-[0_0_25px_rgba(2,132,199,0.6)] hover:scale-[1.02] transition-all cursor-pointer flex items-center justify-center gap-3 group"
           >
             <span className="material-symbols-outlined text-xl group-hover:animate-bounce">bolt</span>
             <span>TRANSMIT REQUEST RFQ NOW</span>
@@ -134,9 +134,9 @@ export default function RfqModal({ isOpen, onClose, defaultProduct, onNavigateTo
           <div className="flex items-center justify-between text-xs font-mono text-slate-400 px-1 pt-1">
             <a 
               href="tel:+917695828840" 
-              className="flex items-center gap-1.5 text-slate-300 hover:text-amber-400 transition-colors"
+              className="flex items-center gap-1.5 text-slate-300 hover:text-sky-400 transition-colors"
             >
-              <span className="material-symbols-outlined text-brand-orange text-sm">call</span>
+              <span className="material-symbols-outlined text-sky-400 text-sm">call</span>
               <span>Call Hotline: +91 7695828840</span>
             </a>
             

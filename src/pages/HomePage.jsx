@@ -61,18 +61,18 @@ export default function HomePage({ setActivePage, onOpenSpec }) {
         <div className="relative max-w-[1600px] mx-auto px-4 lg:px-8 w-full grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           
           <div className="lg:col-span-7 space-y-6">
-            <div className="inline-flex items-center gap-2.5 bg-white dark:bg-brand-dark border border-brand-orange/40 px-3.5 py-1.5 rounded-full shadow-sm">
+            <div className="inline-flex items-center gap-2.5 bg-white dark:bg-brand-dark border border-sky-400/40 px-3.5 py-1.5 rounded-full shadow-sm">
               <span className="flex h-2.5 w-2.5 relative">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-orange opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-brand-orange"></span>
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-sky-400"></span>
               </span>
               <span className="font-mono text-xs text-slate-800 dark:text-slate-200 tracking-wider uppercase font-extrabold">
-                Emergency Turnaround: <span className="text-brand-orange font-bold">&lt; 24h Global Dispatch</span>
+                Emergency Turnaround: <span className="text-sky-400 font-bold">&lt; 24h Global Dispatch</span>
               </span>
             </div>
 
             <h1 className="font-display font-extrabold text-3xl sm:text-5xl lg:text-6xl text-slate-900 dark:text-white tracking-tight leading-[1.1]">
-              Precision ACHE Spares &amp; Rapid <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-orange via-orange-500 to-brand-blue">Field Retubing Engineering</span>
+              Precision ACHE Spares &amp; Rapid <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-brand-blue to-blue-600">Field Retubing Engineering</span>
             </h1>
 
             <p className="text-slate-800 dark:text-slate-300 text-base sm:text-lg max-w-2xl leading-relaxed font-semibold">
@@ -83,7 +83,7 @@ export default function HomePage({ setActivePage, onOpenSpec }) {
               <div className="flex flex-wrap items-center gap-4">
                 <button
                   onClick={() => { setActivePage('contact'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
-                  className="inline-flex items-center gap-2.5 bg-gradient-to-r from-brand-orange via-orange-500 to-amber-500 hover:from-brand-orange-hover hover:to-amber-600 text-white font-display text-xs uppercase font-extrabold tracking-wider px-7 py-3.5 rounded-xl shadow-md transition-all duration-300 hover:scale-105 cursor-pointer"
+                  className="inline-flex items-center gap-2.5 bg-gradient-to-r from-sky-500 via-brand-blue to-blue-600 hover:from-sky-600 hover:to-blue-700 text-white font-display text-xs uppercase font-extrabold tracking-wider px-7 py-3.5 rounded-xl shadow-md transition-all duration-300 hover:scale-105 cursor-pointer"
                 >
                   <span>Request Instant Quote</span>
                   <span className="material-symbols-outlined text-base">arrow_forward</span>

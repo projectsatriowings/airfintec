@@ -42,18 +42,18 @@ html:not(.dark) ::-webkit-scrollbar-thumb {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #ff5722;
+  background: #0284C7;
 }
 
-/* Reusable Orange Border Card Frame Utility */
+/* Reusable Light Blue Border Card Frame Utility */
 .card-orange-frame {
-  border: 2px solid rgba(255, 87, 34, 0.7) !important;
-  box-shadow: 0 4px 20px rgba(255, 87, 34, 0.15) !important;
+  border: 2px solid rgba(2, 132, 199, 0.7) !important;
+  box-shadow: 0 4px 20px rgba(2, 132, 199, 0.18) !important;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .card-orange-frame:hover {
-  border-color: #ff5722 !important;
-  box-shadow: 0 8px 30px rgba(255, 87, 34, 0.28) !important;
+  border-color: #0284C7 !important;
+  box-shadow: 0 8px 30px rgba(2, 132, 199, 0.35) !important;
   transform: translateY(-3px);
 }
 
@@ -69,8 +69,8 @@ html:not(.dark) .glass-dark {
   background: #ffffff;
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 2px solid rgba(255, 87, 34, 0.7);
-  box-shadow: 0 4px 20px rgba(255, 87, 34, 0.15);
+  border: 2px solid rgba(2, 132, 199, 0.7);
+  box-shadow: 0 4px 20px rgba(2, 132, 199, 0.18);
 }
 
 .glass-card-hover {
@@ -78,8 +78,8 @@ html:not(.dark) .glass-dark {
 }
 .glass-card-hover:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 28px -10px rgba(0, 0, 0, 0.12), 0 0 20px rgba(234, 88, 12, 0.3);
-  border-color: #ff5722 !important;
+  box-shadow: 0 12px 28px -10px rgba(0, 0, 0, 0.12), 0 0 20px rgba(2, 132, 199, 0.35);
+  border-color: #0284C7 !important;
 }
 
 /* Tech Animated Pulse */
@@ -97,9 +97,9 @@ input[type=range]::-webkit-slider-thumb {
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  background: #FF5722;
+  background: #0284C7;
   cursor: pointer;
-  box-shadow: 0 0 10px rgba(255,87,34,0.5);
+  box-shadow: 0 0 10px rgba(2, 132, 199, 0.5);
 }
 
 /* Print styling for Spec sheets */
