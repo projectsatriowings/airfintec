@@ -147,7 +147,7 @@ export default function App() {
       <div className="fixed bottom-6 right-6 z-40 flex flex-col sm:flex-row gap-3">
         <button
           onClick={() => handleOpenRfqModal()}
-          className="flex items-center justify-center gap-2 bg-gradient-to-r from-brand-orange via-orange-500 to-amber-500 text-white font-mono text-xs uppercase font-extrabold px-6 py-3.5 rounded-full shadow-[0_4px_20px_rgba(255,87,34,0.4)] hover:scale-105 transition-all cursor-pointer border border-amber-300/40"
+          className="flex items-center justify-center gap-2 bg-gradient-to-r from-sky-500 via-brand-blue to-cyan-500 text-white font-mono text-xs uppercase font-extrabold px-6 py-3.5 rounded-full shadow-[0_4px_20px_rgba(2,132,199,0.45)] hover:scale-105 transition-all cursor-pointer border border-sky-300/40"
         >
           <span className="material-symbols-outlined text-lg text-white">bolt</span>
           <span className="text-white font-extrabold">Request RFQ</span>
@@ -155,9 +155,9 @@ export default function App() {
 
         <a
           href="tel:+917695828840"
-          className="flex items-center justify-center gap-2 bg-slate-900 text-white dark:bg-slate-800 dark:text-white border border-slate-700 font-mono text-xs uppercase font-extrabold px-5 py-3.5 rounded-full shadow-lg hover:scale-105 transition-all hover:border-brand-orange cursor-pointer"
+          className="flex items-center justify-center gap-2 bg-slate-900 text-white dark:bg-slate-800 dark:text-white border border-slate-700 font-mono text-xs uppercase font-extrabold px-5 py-3.5 rounded-full shadow-lg hover:scale-105 transition-all hover:border-sky-400 cursor-pointer"
         >
-          <span className="material-symbols-outlined text-lg text-brand-orange">support_agent</span>
+          <span className="material-symbols-outlined text-lg text-sky-400">support_agent</span>
           <span className="hidden sm:inline text-white font-bold">24/7 Support</span>
         </a>
       </div>

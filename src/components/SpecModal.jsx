@@ -9,21 +9,21 @@ export default function SpecModal({ isOpen, onClose, productName, onQuoteRequest
       onClick={(e) => { if (e.target === e.currentTarget) onClose(); }}
     >
       {/* POPPING SPEC MODAL CARD WITH GRADIENT BORDER & GLOW */}
-      <div id="spec-modal-content" className="relative bg-gradient-to-b from-[#0F172A] via-[#0B132B] to-[#070D1E] border-2 border-brand-orange/60 rounded-3xl max-w-xl w-full p-6 sm:p-8 space-y-6 shadow-[0_0_50px_rgba(255,107,0,0.35)] overflow-hidden">
+      <div id="spec-modal-content" className="relative bg-gradient-to-b from-[#0F172A] via-[#0B132B] to-[#070D1E] border-2 border-sky-400/60 rounded-3xl max-w-xl w-full p-6 sm:p-8 space-y-6 shadow-[0_0_50px_rgba(2,132,199,0.4)] overflow-hidden">
         
         {/* Glowing Background Radial Orbs */}
-        <div className="absolute -top-20 -right-20 w-48 h-48 bg-brand-orange/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div className="absolute -top-20 -right-20 w-48 h-48 bg-sky-500/20 rounded-full blur-3xl pointer-events-none"></div>
         <div className="absolute -bottom-20 -left-20 w-48 h-48 bg-brand-blue/20 rounded-full blur-3xl pointer-events-none"></div>
 
         <button 
           onClick={onClose} 
-          className="absolute top-4 right-4 w-8 h-8 rounded-full bg-slate-800 hover:bg-brand-orange text-slate-300 hover:text-white flex items-center justify-center transition-colors cursor-pointer z-20"
+          className="absolute top-4 right-4 w-8 h-8 rounded-full bg-slate-800 hover:bg-sky-500 text-slate-300 hover:text-white flex items-center justify-center transition-colors cursor-pointer z-20"
         >
           <span className="material-symbols-outlined text-lg">close</span>
         </button>
 
         <div className="space-y-2 relative z-10">
-          <span className="font-mono text-xs text-brand-orange uppercase font-extrabold tracking-wider">ASME Technical Data Sheet</span>
+          <span className="font-mono text-xs text-sky-400 uppercase font-extrabold tracking-wider">ASME Technical Data Sheet</span>
           <h3 className="font-display font-bold text-2xl text-white">{productName || 'Extruded Aluminum Finned Tubes'}</h3>
         </div>
 
@@ -45,7 +45,7 @@ export default function SpecModal({ isOpen, onClose, productName, onQuoteRequest
               onClose();
               onQuoteRequest();
             }}
-            className="flex-1 bg-gradient-to-r from-brand-orange via-orange-500 to-amber-500 hover:from-brand-orange-hover hover:to-amber-600 text-white font-extrabold py-3.5 rounded-xl text-center shadow-md transition-all cursor-pointer uppercase"
+            className="flex-1 bg-gradient-to-r from-sky-500 via-brand-blue to-cyan-500 hover:from-sky-600 hover:to-blue-700 text-white font-extrabold py-3.5 rounded-xl text-center shadow-md transition-all cursor-pointer uppercase"
           >
             Request Quotation For This Spec
           </button>

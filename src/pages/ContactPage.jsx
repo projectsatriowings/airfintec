@@ -189,7 +189,7 @@ export default function ContactPage() {
 
                 <button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-brand-orange via-orange-500 to-amber-500 hover:from-brand-orange-hover hover:to-amber-600 text-white font-mono text-xs uppercase font-extrabold tracking-wider py-3.5 rounded-xl shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer"
+                  className="w-full bg-gradient-to-r from-sky-500 via-brand-blue to-cyan-500 hover:from-sky-600 hover:to-blue-700 text-white font-mono text-xs uppercase font-extrabold tracking-wider py-3.5 rounded-xl shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer"
                 >
                   <span className="material-symbols-outlined text-lg">send</span>
                   <span>Transmit RFQ to Thermal Engineering Lead</span>

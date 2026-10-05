@@ -45,7 +45,7 @@ export default function QualityPage({ setActivePage }) {
               </div>
               <button
                 onClick={handleVerify}
-                className="bg-gradient-to-r from-brand-orange via-orange-500 to-amber-500 text-white font-mono text-xs uppercase font-extrabold px-8 py-3.5 rounded-xl shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 cursor-pointer"
+                className="bg-gradient-to-r from-sky-500 via-brand-blue to-cyan-500 text-white font-mono text-xs uppercase font-extrabold px-8 py-3.5 rounded-xl shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 cursor-pointer"
               >
                 <span>Verify AVL Status</span>
               </button>

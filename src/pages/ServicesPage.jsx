@@ -19,7 +19,7 @@ export default function ServicesPage({ setActivePage }) {
         'Zero-leak hydrotest verification before re-start'
       ],
       btnText: 'Mobilize Plugging Team',
-      btnClass: 'bg-gradient-to-r from-brand-orange via-orange-500 to-amber-500 text-white shadow-md hover:shadow-lg font-extrabold'
+      btnClass: 'bg-gradient-to-r from-sky-500 via-brand-blue to-cyan-500 text-white shadow-md hover:shadow-lg font-extrabold'
     },
     {
       icon: 'heat_pump',
